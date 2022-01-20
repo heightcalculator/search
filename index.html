@@ -13,7 +13,10 @@
 <script>
 function work(){
   var term = document.getElementById("bar").value;
-  window.location = "https://www.google.com/search?q="+term;
+  if (term.toLowerCase()  === "magic" || term.toLowerCase()  === "aarush magic"){
+  window.location = "https://www.aarushmagic.com";
+  } else{
+  window.location = "https://www.google.com/search?q="+term;}
 }
   
   document.getElementById("bar").addEventListener("keydown", function(event) {
