@@ -15,9 +15,9 @@ function work(){
   var term = document.getElementById("bar").value;
   window.location = "https://www.google.com/search?q="+term;
 }
-  input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
+  
+  document.getElementById("bar").addEventListener("keydown", function(event) {
+  if (event.code === "Enter") {
     work();
   }
 });
